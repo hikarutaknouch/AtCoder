@@ -7,7 +7,7 @@ class Program
   static void Main()
   {
     int n = int.Parse(Console.ReadLine());
-    List<int> inputs = Console.ReadLine().Split(' ').Select(t => int.Parse(t)).OrderByDescending().ToArray();
+    List<int> inputs = Console.ReadLine().Split(' ').Select(t => int.Parse(t)).OrderByDescending().ToList();
 
     int aliceSum = 0;
     int bobSum = 0;
