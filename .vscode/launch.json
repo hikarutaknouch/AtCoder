@@ -60,8 +60,6 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",
-                "ATCODER_USERNAME": "hikarutakenouch",
-                "ATCODER_PASSWORD": "hikaru8823"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
