@@ -4,7 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": ".NET Core Attach",
             "type": "coreclr",
@@ -60,7 +59,9 @@
                 }
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ATCODER_USERNAME": "hikarutakenouch",
+                "ATCODER_PASSWORD": "hikaru8823"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
