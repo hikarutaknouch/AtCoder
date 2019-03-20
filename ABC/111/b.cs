@@ -10,7 +10,7 @@ class Program
         Console.WriteLine(max * 100 + max * 10 + max);
     }
     static int solve(int n) {
-        List<int> digits = new List<int>();
+        Stack<int> s = new Stack<int>();
         while(n >= 10) {
             digits.Add(n%10);
             n /= 10;
