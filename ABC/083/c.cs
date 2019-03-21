@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 class Program
@@ -8,12 +7,12 @@ class Program
         long[] s = Console.ReadLine().Split().Select(long.Parse).ToArray();
         Console.WriteLine(solve(s[0], s[1]));
     }
-    static long solve(long x, long y) {
-        List<long> a = new List<long>();
+    static int solve(long x, long y) {
+        int count = 0;
         while(x <= y) {
-            a.Add(x);
+            count ++;
             x *= 2;
         }
-        return a.Count();
+        return count;
     }
 }
