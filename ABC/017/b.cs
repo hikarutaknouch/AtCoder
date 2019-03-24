@@ -2,12 +2,12 @@ using System;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     string s = Console.ReadLine();
     Console.WriteLine(choku(s) ? "YES" : "NO");
   }
-  public static bool choku(string x) {
+  static bool choku(string x) {
     int result = 0;
     for (int i = 0; i < x.Length; i ++) {
       string s = x[i].ToString();

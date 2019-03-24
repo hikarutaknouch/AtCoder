@@ -2,12 +2,8 @@ using System;
 using System.Linq;
 
 class Program
-{
-  /// <summary>
-  ///   The main entry point for the application
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+{}
+  static void Main(string[] args)
   {
     int[] s1 = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
     int[] s2 = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
