@@ -2,11 +2,7 @@ using System;
 
 class Program
 {
-  /// <summary>
-  ///   The main entry point for the application
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());
     if (n >= 30) n = n % 30; //30回繰り返すと同じ123456に戻るので、nが30を越えた場合剰余を出す。

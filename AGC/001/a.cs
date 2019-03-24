@@ -3,10 +3,6 @@ using System.Linq;
 
 class Program
 {
-  /// <summary>
-  ///   配列xから数値のペアを作り、小さい方を足していく。
-  /// </summary>
-  [STAThread]
   public static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());

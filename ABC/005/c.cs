@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int t = int.Parse(Console.ReadLine());
     int n = int.Parse(Console.ReadLine());

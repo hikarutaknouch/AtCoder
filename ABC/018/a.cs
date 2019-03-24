@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int[] x = new int[3];
     for (int i = 0; i < 3; i ++) x[i] = int.Parse(Console.ReadLine());

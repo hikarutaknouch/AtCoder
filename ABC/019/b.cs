@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     string str = Console.ReadLine();
     char[] s = (str + "1").ToCharArray();

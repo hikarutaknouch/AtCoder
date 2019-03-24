@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 
 class Program
-{}
+{
   static void Main(string[] args)
   {
     int[] s1 = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();

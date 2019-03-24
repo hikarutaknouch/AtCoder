@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     string a = Console.ReadLine();
     string b = Console.ReadLine();

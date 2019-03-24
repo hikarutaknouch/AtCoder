@@ -3,12 +3,12 @@ using System.Text;
 
 class Program
 {
-  public static void Main()
+  static void Main()
   {
     string S = Console.ReadLine();
     Console.WriteLine(judge(S) ? "YES" : "NO");
   }
-  public static bool judge(string s) {
+  static bool judge(string s) {
     StringBuilder sb = new StringBuilder(s);
     for (int i = 0; i < s.Length-1; i ++) {
       for (int j = 0; j <= s.Length - i; j ++) {

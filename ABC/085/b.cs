@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());
     HashSet<int> d = new HashSet<int>();

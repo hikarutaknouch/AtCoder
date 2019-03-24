@@ -2,11 +2,7 @@ using System;
 
 class Program
 {
-  /// <summary>
-  ///   The main entry point for the application
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     long n = long.Parse(Console.ReadLine());
     long[] a = new long[n];

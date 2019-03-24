@@ -4,11 +4,7 @@ using System.Linq;
 
 class Program
 {
-  /// <summary>
-  ///   読み込んだ文字列のうち、最も出現回数が多い文字列を出力。同率のものがあっても一つだけで良い。
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());
     string[] x = new string[n];

@@ -3,7 +3,7 @@ using System.Linq;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());
     int[] l = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();

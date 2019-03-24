@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int[] s = Console.ReadLine().Split().Select(int.Parse).ToArray();
     int n = s[0];

@@ -3,11 +3,7 @@ using System.Linq;
 
 class Program
 {
-  /// <summary>
-  ///   任意の数値xに対して「x+1 <= y」かつ「k桁目までが0である」最小の数値yを出力する。
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int[] s = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
     int x = s[0];

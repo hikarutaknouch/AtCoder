@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    public static void Main(string[] args) {
+    static void Main(string[] args) {
         char[] s = Console.ReadLine().ToCharArray();
         List<Char> list = new List<char>();
         list.AddRange(s);

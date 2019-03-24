@@ -3,7 +3,7 @@ using System.Linq;
 
 class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     char[] s = Console.ReadLine().ToCharArray();
     int n = int.Parse(Console.ReadLine());
@@ -20,7 +20,7 @@ class Program
     string ans = new String(s);
     Console.WriteLine(ans);
   }
-  public static void Swap<T>(ref T a, ref T b) {
+  static void Swap<T>(ref T a, ref T b) {
     var t = a;
     a = b;
     b = t;

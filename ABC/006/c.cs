@@ -3,11 +3,7 @@ using System.Linq;
 
 class Program
 {
-  /// <summary>
-  ///   The main entry point for the application
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int[] x = Console.ReadLine().Split(' ').Select(t => int.Parse(t)).ToArray();
     int n = x[0];

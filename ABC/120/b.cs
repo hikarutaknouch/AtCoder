@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    public static void Main(string[] args) {
+    static void Main(string[] args) {
         int[] s = Console.ReadLine().Split().Select(int.Parse).ToArray();
         List<int> result = new List<int>();
         for (int i = 1; i <= 100; i ++) {

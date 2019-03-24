@@ -3,11 +3,7 @@ using System.Linq;
 
 class Program
 {
-  /// <summary>
-  ///   a(i),b(i)が与えられて、配列のa~bに1を格納していき配列の最大値を求める
-  /// </summary>
-  [STAThread]
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
     int n = int.Parse(Console.ReadLine());
     int[] x = new int[1000002];
