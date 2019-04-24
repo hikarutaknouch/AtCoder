@@ -18,8 +18,8 @@ class Program
     }
     static long solve(long[] l) {
         long count = 0;
-        for(int i = 0; i < 3; i ++) {
-            for(int j = i+1; j <= 3; j ++) {
+        for(int i = 0; i < l.Length-2; i ++) {
+            for(int j = i+1; j <= l.Length-2; j ++) {
                 count += l[i] * l[j] * (l.Where((x,y) => y > j).Sum());
             }
         }
