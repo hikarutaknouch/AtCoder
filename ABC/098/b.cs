@@ -7,16 +7,17 @@ class Program
     static void Main(string[] args) {
         int n = int.Parse(Console.ReadLine());
         string s = Console.ReadLine();
-        int[] l = new int[n];
-        for(int i = 0; i < n; i ++) {
-            char[] X = s.Substring(0, i).ToCharArray();
-            char[] Y = s.Substring(i+1).ToCharArray();
-            List<char> x = new List<char>(X.Distinct());
-            List<char> y = new List<char>(Y.Distinct());
-            for(int j = 0; j < x.Count(); j ++) {
-                if(y.Contains(x[j])) l[i] ++;
+        Console.WriteLine(solve(n,s));
+    }
+    static int solve(int n, string s) {
+        int[] ans = new int[n];
+        for(int i = 1; i < n; i ++) {
+            HashSet<char> x = new HashSet<char>(s.Substring(0,i));
+            HashSet<char> y = new HashSet<char>(s.Substring(i));
+            foreach(char c in x) {
+                if(y.Contains(c)) ans[i] ++;
             }
         }
-        Console.WriteLine(l.Max());
+        return ans.Max();
     }
 }
