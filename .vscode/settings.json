@@ -1,4 +1,4 @@
 {
     "terminal.integrated.cursorBlinking": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
 }
