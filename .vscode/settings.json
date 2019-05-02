@@ -1,4 +1,8 @@
 {
     "terminal.integrated.cursorBlinking": true,
     "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "chrono": "cpp",
+        "iostream": "cpp"
+    },
 }
