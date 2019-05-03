@@ -3,6 +3,7 @@
     "git.ignoreLimitWarning": true,
     "files.associations": {
         "chrono": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cmath": "cpp"
     },
 }
