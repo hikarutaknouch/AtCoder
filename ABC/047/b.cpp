@@ -16,5 +16,5 @@ int main() {
         else continue;
     }
     int ans = max(0, r-l) * max(0, H-L);
-    cout << (ans>0 ? ans : 0) << endl;
+    cout << ans << endl;
 }
