@@ -6,20 +6,11 @@ int main() {
     int k; cin >> k;
     int n = s.length();
     vector<string> subs;
-    vector<vector<int>> index(26);
-    for(int i = 0; i < n; i ++) {
-        index[s[i]-97].push_back(i);
-    }
-    vector<int> priority;
-    for(int i = 0; i < 26; i ++) {
-        priority.insert(priority.end(), index[i].begin(), index[i].end());
-    }
     for(int i = 0; i < n; i ++) {
         string tmp = "";
-        for(int j = priority[i]; j < n; j ++) {
+        for(int j = i; j < min(n,k+i); j ++) {
             tmp += s[j];
             subs.push_back(tmp);
-            if(tmp.length() > k) break;
         }
     }
     sort(subs.begin(), subs.end());
