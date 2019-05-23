@@ -4,11 +4,8 @@ using namespace std;
 int main() {
     string s,t; cin >> s >> t;
     vector<string> ans;
-    if(s.size()<t.size()) {
-        cout << "UNRESTORABLE" << endl;
-        return 0;
-    }
-    for(int i = 0; i <= s.size()-t.size(); i ++) {
+    int l = s.size()-t.size()+1;
+    for(int i = 0; i < max(0, l); i ++) {
         string tmp = s;
         for(int j = 0; j < t.length(); j ++) {
             if(i+j>s.size()-1) break;
