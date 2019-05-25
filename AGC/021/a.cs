@@ -27,7 +27,6 @@ class Program
             x/=10;
         }
         for(int i = 0; i < digit.Count()-1; i ++) {
-            if(i == digit.Count()-1) continue;
             if(digit[i] != 9) {
                 first -= 1L;
                 break;
