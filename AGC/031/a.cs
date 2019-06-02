@@ -4,23 +4,20 @@ using System.Linq;
 
 class Program
 {
-    static int N;
-    static char[] chr;
-    static int count = 0;
+    static long mod = 1000000007;
     static void Main(string[] args) {
-        N = int.Parse(Console.ReadLine());
-        chr = Console.ReadLine().ToCharArray();
-        int mod = 1000000007;
-        Console.WriteLine(dfs(0, 0)%mod);
+        int n = int.Parse(Console.ReadLine());
+        string s = Console.ReadLine();
+        Console.WriteLine(solve(s,n));
     }
-    static int dfs(int n, int m) {//n=スタートの文字, m=現在の位置
-        for (int i = m; i<N; i ++) {
-            if (i > 0 && chr[n]==chr[m]) break;
-            else {
-                count ++;
-                dfs(n, m+1);
-            }
+    static long solve(string s, long n) {
+        int[] chr = new int[26];
+        long ans = 1L;
+        for(int i = 0; i < n; i++) chr[s[i]-97] ++;
+        for(int i = 0; i < 26; i ++) {
+            ans *= chr[i]+1;
+            ans %= mod;
         }
-        return count;
+        return (ans+mod-1)%mod;
     }
 }
