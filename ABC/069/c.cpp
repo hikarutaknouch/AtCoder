@@ -18,4 +18,5 @@ int main() {
         }
     }
     cout << (n-2*f <= 1 || n-2*f-t<=0 ? "Yes" : "No") << endl;
+    return 0;
 }
