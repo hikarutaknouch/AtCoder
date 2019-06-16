@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define REP(i, n) for(int i = 0; i < n; i++)
-#define REPP(i, n) for(int i = 1; i <= n; i++)
 #define REPR(i, n) for(int i = n; i >= 0; i--)
 #define FOR(i, m, n) for(int i = m; i < n; i++)
 #define ALL(v) v.begin(), v.end()
@@ -10,12 +9,7 @@ typedef pair<ll, ll> p;
 const ll MOD = 1000000007;
 
 int main() {
-    int n; cin >> n;
-    vector<int> p(n);
-    REP(i,n) cin >> p[i];
-    sort(ALL(p));
-    vector<int> dp(n+1);
-    dp[0] = 1;
-    cout << dp[n] << endl;
+    int x; cin >> x;
+    cout << x/10 + x%10 << endl;
     return 0;
 }

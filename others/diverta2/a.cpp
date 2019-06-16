@@ -10,12 +10,7 @@ typedef pair<ll, ll> p;
 const ll MOD = 1000000007;
 
 int main() {
-    int n; cin >> n;
-    vector<int> p(n);
-    REP(i,n) cin >> p[i];
-    sort(ALL(p));
-    vector<int> dp(n+1);
-    dp[0] = 1;
-    cout << dp[n] << endl;
+    int n, k; cin >> n >> k;
+    cout << (k==1 ? 0 : n-k) << endl;
     return 0;
 }
