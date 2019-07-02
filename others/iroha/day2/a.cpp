@@ -27,8 +27,6 @@ ll lcs(string s, string t) {
 }
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     string S,T; cin >> S >> T;
     cout << lcs(S,T) + 1 << endl;
     return 0;
