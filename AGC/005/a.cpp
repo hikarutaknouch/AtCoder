@@ -11,8 +11,6 @@ typedef pair<ll, ll> p;
 const ll MOD = 1000000007;
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     string x; cin >> x;
     int n = x.length();
     stack<char> st;
