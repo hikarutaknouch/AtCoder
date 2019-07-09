@@ -18,6 +18,7 @@
         "ostream": "cpp",
         "tuple": "cpp",
         "utility": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iosfwd": "cpp"
     },
 }
