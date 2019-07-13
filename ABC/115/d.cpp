@@ -11,7 +11,6 @@ typedef pair<ll, ll> p;
 const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
-ll N,X;
 vector<ll> B, P;
 
 ll f(int n, ll x) {
