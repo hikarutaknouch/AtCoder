@@ -24,8 +24,6 @@ map<ll, ll> primeFactor(ll N) {
 }
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     ll n,p; cin >> n >> p;
     ll ans = 1;
     for(auto P : primeFactor(p)) {
