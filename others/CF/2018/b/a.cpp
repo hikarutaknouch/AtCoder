@@ -12,8 +12,6 @@ const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     int n; cin >> n;
     int ans = 100 - (100/n);
     cout << ans << endl;
