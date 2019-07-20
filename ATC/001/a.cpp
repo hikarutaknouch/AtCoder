@@ -29,8 +29,6 @@ void dfs(int x, int y) {
 }
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     cin >> H >> W;
     p s,g;
     REP(i,H) {
