@@ -12,8 +12,6 @@ const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
 int main() {
-    ifstream in();
-    cin.rdbuf(in.rdbuf());
     int n; cin >> n;
     vector<int> s(n);
     REP(i,n) cin >> s[i];
