@@ -16,17 +16,17 @@ int main() {
     string x; cin >> x;
     reverse(ALL(x));
     ll ans;
-    FOR(i,2,11) {
+    FOR(m,2,11) {
         ll tmp = n;
         ll d = 0;
         bool flag = true;
         while (tmp>0) {
-            flag = (tmp%i==x[d]-48);
-            tmp /= i;
+            flag = (tmp%m==x[d]-48);
+            tmp /= m;
             ++ d;
         }
         if(flag) {
-            ans = i;
+            ans = m;
             break;
         }
     }
