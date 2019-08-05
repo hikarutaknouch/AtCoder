@@ -12,8 +12,6 @@ const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     ll n; cin >> n;
     vector<ll> h(n);
     REP(i,n) cin >> h[i];
