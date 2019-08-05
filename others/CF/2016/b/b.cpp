@@ -12,11 +12,26 @@ const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
 int main() {
-    int k,t; cin >> k >> t;
-    vector<int> a(t);
-    REP(i,t) cin >> a[i];
-    int m = *max_element(ALL(a));
-    int ans = max(m-1-(k-m),0);
-    cout << ans << endl;
+    int n,a,b; cin >> n >> a >> b;
+    string s; cin >> s;
+    int ab = a+b;
+    bool ans;
+    REP(i,n) {
+        if(s[i]=='a') {
+            ans = (ab>0);
+            if(ab>0) {
+                ab --;
+            }
+        }
+        else if(s[i]=='b') {
+            ans = (ab>0 && b>0);
+            if(ab>0 && b>0) {
+                ab --;
+                b--;
+            }
+        }
+        else ans = false;
+        cout << (ans ? "Yes" : "No") << endl;
+    }
     return 0;
 }
