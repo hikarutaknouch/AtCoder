@@ -23,8 +23,6 @@ int lis(int n, vector<int>& v) {
 }
 
 int main() {
-    ifstream in("input.txt");
-    cin.rdbuf(in.rdbuf());
     int n;cin >> n;
     vector<int> a(n);
     REP(i,n) cin >> a[i];
