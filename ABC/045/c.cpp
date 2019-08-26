@@ -17,8 +17,6 @@ template<typename T1,typename T2> inline void chmax(T1 &a,T2 b) {if(a<b) a=b;}
 int main() {
     cin.tie(0);
     ios::sync_with_stdio(false);
-    ifstream in("in.txt");
-    cin.rdbuf(in.rdbuf());
     string s; cin >> s;
     int n = s.length();
     ll ans = 0;
