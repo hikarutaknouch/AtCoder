@@ -11,6 +11,9 @@ typedef pair<ll, ll> P;
 const ll MOD = 1000000007;
 const ll INF = 1000000000;
 
+template<typename T1,typename T2> inline void chmin(T1 &a,T2 b) {if(a>b) a=b;}
+template<typename T1,typename T2> inline void chmax(T1 &a,T2 b) {if(a<b) a=b;}
+
 int main() {
     cin.tie(0);
     ios::sync_with_stdio(false);
@@ -21,13 +24,12 @@ int main() {
     vector<vector<int>> dp(n+1, vector<int>(m,0));
     REP(i,n) {
         REP(j,m) {
-            vector<int> tmp(m, b[i][j]);
+            dp[i+1][j] = INF;
             REP(k,m) {
-                tmp[k] += dp[i][k];
-                if(dp[i][k]%a[i][j]==0) continue;
-                else tmp[k] += a[i][j] - (dp[i][k]%a[i][j]);
+                int tmp = b[i][j] + dp[i][k];
+                if(dp[i][k]%a[i][j]>0) tmp += a[i][j] - (dp[i][k]%a[i][j]);
+                chmin(dp[i+1][j],tmp);
             }
-            dp[i+1][j] = *min_element(ALL(tmp));
         }
     }
     int ans = *min_element(ALL(dp[n]));
