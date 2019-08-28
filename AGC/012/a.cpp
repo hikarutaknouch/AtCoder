@@ -22,7 +22,7 @@ int main() {
     REP(i,3*n) cin >> a[i];
     sort(a.rbegin(),a.rend());
     ll ans = 0;
-    for(int i = 1; i < 3*n - (n-1); i += 2) ans += a[i];
+    for(int i = 1; i < 2*n+1; i += 2) ans += a[i];
     cout << ans << endl;
     return 0;
 }
