@@ -49,7 +49,7 @@ int main() {
     }
     int ans = -1;
     REP(i,n) {
-        if(i==uf.par[i]) ++ans;
+        if(uf.Find(i)==i) ++ans;
     }
     cout << ans << endl;
     return 0;
