@@ -12,7 +12,7 @@ class Program
     Console.WriteLine(ans);
   }
   static int Gcd(int a, int b) {
-    if (a < b) return Gcd(b, a); // 引数を入替えて自分を呼び出す
+    if (a < b) return Gcd(b, a);
     while (b != 0) {
       var remainder = a % b;
       a = b;
