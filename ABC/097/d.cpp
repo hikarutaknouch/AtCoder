@@ -53,7 +53,7 @@ int main() {
     }
     int ans = 0;
     REP(i,n) {
-        if(uf.Same(uf.par[i],p[i])) ++ ans;
+        if(uf.Same(i,p[i])) ++ ans;
     }
     cout << ans << endl;
     return 0;
