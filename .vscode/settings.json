@@ -1,4 +1,9 @@
 {
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "runner.languageMap": {
+        "cpp": "/Users/Hikaru/vsc_run/cpp.sh"
+    },
     "terminal.integrated.cursorBlinking": true,
     "git.ignoreLimitWarning": true,
     "files.associations": {
