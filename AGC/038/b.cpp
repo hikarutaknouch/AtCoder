@@ -55,7 +55,7 @@ int main() {
     cin.tie(0);
     ios::sync_with_stdio(false);
     int n,k; cin >> n >> k;
-    vector<int> p(n), x(n);
+    vector<int> p(n);
     SegmentTree<int> segmin(n, [](int a,int b){return min(a,b);}, INT_MAX);
     SegmentTree<int> segmax(n, [](int a,int b){return max(a,b);}, INT_MIN);
     REP(i,n) {
@@ -68,12 +68,12 @@ int main() {
         cnt[i+1] = cnt[i] + (p[i]>p[i+1]);
     }
     int ans = 1;
-    int s = (cnt[k-1]-cnt[0]>0);
+    bool flag = (cnt[k-1]-cnt[0]>0);
     REP(i,n-k) {
         int x = segmin.query(i,i+k+1);
         int y = segmax.query(i,i+k+1);
-        if((s || cnt[i+k]-cnt[i+1]>0) && (p[i]!=x || p[i+k]!=y)) {
-            if(cnt[i+k]-cnt[i+1]==0) s = 0;
+        if((flag || cnt[i+k]-cnt[i+1]>0) && (p[i]!=x || p[i+k]!=y)) {
+            if(cnt[i+k]-cnt[i+1]==0) flag = false;
             ++ ans;
         }
     }
