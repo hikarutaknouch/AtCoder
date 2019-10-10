@@ -16,17 +16,12 @@ int main() {
     ios::sync_with_stdio(false);
     int n; cin >> n;
     vector<int> a(n);
-    int m = 0;
-    REP(i,n) {
-        cin >> a[i];
-        chmax(m,a[i]);
-    }
+    REP(i,n) cin >> a[i];
     sort(ALL(a));
-    pair<int,int> ans = {0,0};
-    ans.first = m;
+    pair<int,int> ans = {a[n-1],0};
     int diff = INT_MAX;
     REP(i,n-1) {
-        int tmp = abs(2*a[i] - m);
+        int tmp = abs(2*a[i] - ans.first);
         if(diff>tmp) {
             diff = tmp;
             ans.second = a[i];
