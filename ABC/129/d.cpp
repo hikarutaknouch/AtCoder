@@ -16,7 +16,6 @@ int main() {
     ios::sync_with_stdio(false);
     int h,w; cin >> h >> w;
     vector<string> s(h);
-    vector<vector<int>> grid(h, vector<int>(w,0));
     vector<vector<int>> l(h,vector<int>(w,0)), r(h,vector<int>(w,0)), u(h,vector<int>(w,0)),d(h,vector<int>(w,0));
     REP(i,h) cin >> s[i];
     REP(i,h) REP(j,w) {
